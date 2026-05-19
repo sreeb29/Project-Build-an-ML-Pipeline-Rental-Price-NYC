@@ -50,21 +50,20 @@ def go(config: DictConfig):
             )
 
         if "basic_cleaning" in active_steps:
-            #Implementing EDA process  to clean the sample.csv#
+            #Implementing basic cleaning process by removing outliers from the sample.csv.
             _ = mlflow.run(
                 os.path.join(hydra.utils.get_original_cwd(), "src", "basic_cleaning"),
                 "main",
                 parameters={
-                    "input_artifact": "sample.csv:lates",
+                    "input_artifact": "sample.csv:latest",
                     "output_artifact": "clean_sample.csv",
                     "output_type": "clean_sample",
-                    "output_description": "Data with outlies removed",
+                    "output_description": "Data with outliers removed",
                     "min_price": config["etl"]["min_price"],
                     "max_price": config["etl"]["max_price"]
                 }
             )
-            ##################
-            pass
+            
 
         if "data_check" in active_steps:
             ##################
