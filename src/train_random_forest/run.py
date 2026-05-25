@@ -95,12 +95,13 @@ def go(args):
     ######################################
     # Save the sk_pipe pipeline as a mlflow.sklearn model in the directory "random_forest_dir"
     # HINT: use mlflow.sklearn.save_model
+    signature = mlflow.models.infer_signature(X_val, y_pred)
     mlflow.sklearn.save_model(
         sk_pipe,
         "random_forest_dir",
         signature=signature,
         serialization_format=mlflow.sklearn.SERIALIZATION_FORMAT_CLOUDPICKLE,
-        input_example = X_train.iloc[:5]
+        input_example = X_val.iloc[:5]
     )
     ######################################
 
