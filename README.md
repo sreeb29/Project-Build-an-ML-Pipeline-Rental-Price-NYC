@@ -11,7 +11,7 @@ In this project you will build such a pipeline.
 - Weights & Biases Project Link:
   https://wandb.ai/skris23-western-governors-university/nyc_airbnb/workspace?nw=nwuserskris23 
 
--Github Repository Project Link:
+- Github Repository Project Link:
   https://github.com/sreeb29/Project-Build-an-ML-Pipeline-Rental-Price-NYC 
 
 
