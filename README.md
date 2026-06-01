@@ -6,6 +6,15 @@ to be retrained with the same cadence, necessitating an end-to-end pipeline that
 
 In this project you will build such a pipeline.
 
+## Project Links
+
+- Weights & Biases Project Link:
+  https://wandb.ai/skris23-western-governors-university/nyc_airbnb/workspace?nw=nwuserskris23 
+
+-Github Repository Project Link:
+  https://github.com/sreeb29/Project-Build-an-ML-Pipeline-Rental-Price-NYC 
+
+
 ## Table of contents
 
 - [Preliminary steps](#preliminary-steps)
